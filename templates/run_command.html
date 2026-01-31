@@ -1,0 +1,14 @@
+<h1> Run Ceph Command</h1>
+
+
+<form method="POST" action="/run">
+    <label>Enter Command:</label>
+    <input type="text" name="command" style="width: 300px;"><br><br>
+    <input type="submit" value="Run">
+</form>
+
+
+{% if output %}
+     <h2>Output</h2>
+     <pre>{{ output }}</pre>
+{% endif %}
