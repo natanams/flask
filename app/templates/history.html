@@ -1,0 +1,17 @@
+<h1>Command History</h1>
+
+<table border="1" cellpadding="5">
+    <tr>
+        <th>Time</th>
+        <th>Command</th>
+        <th>Output</th>
+    </tr>
+
+    {% for r in records %}
+    <tr>
+        <td>{{ r.timestamp }}</td>
+        <td>{{ r.command }}</td>
+        <td><pre>{{ r.output }}</pre></td>
+    </tr>
+    {% endfor %}
+</table>
